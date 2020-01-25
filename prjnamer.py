@@ -4,7 +4,7 @@ try:
     import requests
     import random
 except ImportError as ie:
-    print "please 'pip install {}'".format(str(ie).split()[3])
+    print("please 'pip install {}'".format(str(ie).split()[3]))
     exit(1)
 
 # We are going to pick a famous comedian with a unique last name.
@@ -38,7 +38,7 @@ for n in names.keys():
 
 choice = random.choice(name_list)
 
-print "How about calling your git project {} or {}".format(choice.split()[1].lower(), choice.replace(" ", "").lower())
+print("How about calling your git project {} or {}".format(choice.split()[1].lower(), choice.replace(" ", "").lower()))
 
 
 
